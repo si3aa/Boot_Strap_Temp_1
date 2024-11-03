@@ -1,12 +1,23 @@
 :root{
     --dark-color :#19283f;
     --green-color :#33d1cc;
-    --ligth-color :#eff7fa;
+    --red-color :#ff3150;
+    --yellow-color :#ffc400;
+    --section-color :#eff7fa;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    height: 10000000px;
+    height: 10000px;
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+    color: var(--dark-color);
+    background-color: white;
 }
 /*Start Navbar*/
 .navbar{
@@ -40,3 +51,9 @@ body{
 }
 /*ُEnd Navbar*/
 
+/*Start Landing*/
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/*End Landing*/
