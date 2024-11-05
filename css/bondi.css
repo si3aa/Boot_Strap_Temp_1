@@ -151,3 +151,30 @@ body{
     background-color: var(--dark-color);
 }
 /* End Project Section */
+
+/* Start Subscribe Section */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus{
+    outline: none;
+}
+.subscribe input[type="text"]::placeholder{ 
+    color: white;
+}
+.subscribe ::-webkit-input-placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+.subscribe input[type="submit"]:hover{
+    background-color: var(--green-color);
+    color: var(--dark-color);
+}
+/* End Subscribe Section */
