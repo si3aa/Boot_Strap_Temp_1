@@ -33,26 +33,22 @@ body {
 }
 
 /*Start Navbar*/
-.navbar {
-    background-color: var(--dark-color);
-}
-
-.navbar .navbar-nav .nav-link {
-    color: white;
-}
 
 .navbar .navbar-nav .nav-link .active,
 .navbar .navbar-nav .nav-link :focus,
-.navbar .navbar-nav .nav-link :hover {
+.navbar .navbar-nav .nav-link :hover,
+.navbar .search svg,
+.features .icon-holder .icon,
+.footer .copyright>span {
     color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-item :hover {
+    color: var(--red-color);
 }
 
 .navbar .search {
     border-left: 1px solid var(--green-color);
-}
-
-.navbar .search svg {
-    color: var(--green-color);
 }
 
 .navbar .navbar-toggler {
@@ -67,14 +63,12 @@ body {
 
 .navbar .navbar-toggler[aria-expanded="true"] {
     border-color: var(--green-color);
-    background-color: var(--green-color);
 }
 
 /*ُEnd Navbar*/
 
 /*Start Landing*/
 .landing {
-    background-color: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
 
@@ -96,17 +90,11 @@ body {
 
 }
 
-.features .icon-holder .icon {
-    color: var(--green-color);
-}
-
-.features .feat h4 {
-    color: var(--yellow-color);
-}
-
 /*End Features*/
 /* Start Our Work */
-.our-work {
+.our-work,
+.team,
+.blog {
     background-color: var(--section-color);
 }
 
@@ -160,22 +148,20 @@ body {
 
 /* Start Our Team Section */
 
-.team {
-    background-color: var(--section-color);
-}
-
-.team h2 {
-    color: var(--yellow-color);
-}
-
-.team .box h4 {
+.team .box h4,
+.subscribe input[type="submit"]:hover,
+.navbar .navbar-toggler[aria-expanded="true"] {
     background-color: var(--green-color);
 }
 
 /* End Our Team Section */
 
 /* Start Project Section */
-.project {
+.project,
+.footer,
+.subscribe input[type="submit"],
+.landing,
+.navbar {
     background-color: var(--dark-color);
 }
 
@@ -195,47 +181,27 @@ body {
     outline: none;
 }
 
-.subscribe input[type="text"]::placeholder {
+.subscribe ::-webkit-input-placeholder,
+.footer .copyright div span:hover,
+.subscribe input[type="text"]::placeholder,
+.navbar .navbar-nav .nav-link {
     color: white;
 }
 
-/* .subscribe ::-webkit-input-placeholder{
-    color: white;
-} */
 .subscribe input[type="submit"] {
-    background-color: var(--dark-color);
     color: var(--yellow-color);
 }
 
 .subscribe input[type="submit"]:hover {
-    background-color: var(--green-color);
     color: var(--dark-color);
 }
 
 /* End Subscribe Section */
-/* Start blog section */
-.blog {
-    background-color: var(--section-color);
-}
-
-/* End blog section */
 
 /* Start Footer Section */
-.footer {
-    background-color: var(--dark-color);
-}
-
-.footer .copyright>span {
-    color: var(--green-color);
-}
-
 .footer .copyright div span {
     color: var(--yellow-color);
     cursor: pointer;
-}
-
-.footer .copyright div span:hover {
-    color: white;
 }
 
 .footer .facebook {
